@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Institut Al-Islah</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="./assets/logo-alislah.PNG" />
+  <link rel="apple-touch-icon" href="./assets/logo-alislah.PNG">
+  <meta name="msapplication-TileImage" content="./assets/logo-alislah.PNG">
+
+  <link rel="stylesheet" href="styles.css?v=40" />
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner container">
+    <div class="brand">
+      <img src="./assets/logo-alislah.PNG" alt="Institut Al-Islah" class="brand-logo" />
+      <div class="brand-text">
+        <div class="brand-ar">معهد الإصلاح</div>
+        <div class="brand-sub">Cours & ressources pédagogiques</div>
+      </div>
+    </div>
+
+    <button id="home-link" class="pill" type="button">Accueil</button>
+  </div>
+</header>
+
+<main class="container main">
+
+  <!-- HOME -->
+  <section id="catalogue-view">
+    <section class="hero">
+      <div class="hero-logo">
+        <img src="./assets/logo-alislah.PNG" alt="" />
+      </div>
+      <h1>Bienvenue à l'Institut Al-Islah</h1>
+      <p>
+        Découvrez nos cours d'alphabétisation et de tajwīd dispensés par des enseignants qualifiés.
+        Accédez à vos cours, replays, et supports pédagogiques.
+      </p>
+      <div class="hero-sep" aria-hidden="true"></div>
+    </section>
+
+    <!-- Les 3 grosses cartes sont générées ici par app.js -->
+    <section class="home-grid" id="courses"></section>
+  </section>
+
+  <!-- COURSE VIEW -->
+  <section id="course-view" class="hidden">
+    <button id="back" class="backlink" type="button">← Retour</button>
+
+    <article class="course-card">
+      <h2 id="course-title"></h2>
+      <p id="course-teacher" class="muted"></p>
+      <p id="course-desc" class="course-desc"></p>
+
+      <div id="zoom-block" class="zoom-block" style="display:none;">
+        <h3>Session en direct</h3>
+        <a id="zoom-link" class="btn" target="_blank" rel="noopener">Rejoindre la salle Zoom</a>
+      </div>
+
+      <div class="player">
+        <audio id="audio" controls preload="none"></audio>
+      </div>
+
+      <div id="supports"></div>
+    </article>
+  </section>
+
+  <!-- Viewer VIDEO inline -->
+<section id="video-inline" class="pdf-inline hidden" aria-hidden="true">
+  <div class="pdf-inline-head">
+    <h3 id="video-inline-title">Replay</h3>
+    <button id="video-inline-close" class="btn btn-ghost" type="button">Fermer</button>
+  </div>
+
+  <!-- Pour YouTube/Vimeo/etc. -->
+  <iframe
+    id="video-iframe"
+    class="pdf-iframe"
+    title="Replay"
+    loading="lazy"
+    referrerpolicy="no-referrer"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  ></iframe>
+</section>
+
+  <!-- Viewer PDF inline -->
+<section id="pdf-inline" class="pdf-inline hidden" aria-hidden="true">
+  <div class="pdf-inline-head">
+    <h3 id="pdf-inline-title">Fiche PDF</h3>
+    <button id="pdf-inline-close" class="btn btn-ghost" type="button">Fermer</button>
+  </div>
+
+  <iframe
+    id="pdf-iframe"
+    class="pdf-iframe"
+    title="Fiche PDF"
+    loading="lazy"
+    referrerpolicy="no-referrer"
+  ></iframe>
+
+  <p class="muted pdf-note">
+    Éditions Al-Iqraiyyah
+  </p>
+</section>
+
+</main>
+
+<!-- PASSWORD MODAL -->
+<div id="pw-modal" class="modal hidden" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="pw-title">
+    <h3 id="pw-title">Accès sécurisé</h3>
+    <p class="muted" id="pw-subtitle"></p>
+
+    <label class="modal-label" for="pw-input">Mot de passe</label>
+    <input id="pw-input" class="modal-input" type="password" inputmode="text" autocomplete="off" />
+
+    <p id="pw-error" class="modal-error" style="display:none;"></p>
+
+    <div class="modal-actions">
+      <button id="pw-cancel" class="btn btn-ghost" type="button">Annuler</button>
+      <button id="pw-ok" class="btn" type="button">OK</button>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <!-- Bloc Institut -->
+    <div class="footer-col">
+      <img src="./assets/logo-alislah.PNG" alt="Institut Al-Islah" class="footer-logo">
+      <p class="footer-text">
+        Institut Al-Islah – Cours d’alphabétisation et de tajwīd dispensés
+        par des enseignants qualifiés.
+      </p>
+    </div>
+
+    <!-- Bloc Navigation -->
+    <div class="footer-col">
+      <h4>Enseignements</h4>
+      <ul>
+        <li><a href="#">Alphabétisation Hommes</a></li>
+        <li><a href="#">Alphabétisation Femmes</a></li>
+        <li><a href="#">Tajwīd</a></li>
+      </ul>
+    </div>
+
+    <!-- Bloc Contact -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:alislah.inscription@outlook.com">Email</a></li>
+      </ul>
+
+      <div class="footer-socials">
+        <a href="https://www.tiktok.com/@institut.al.islah" target="_blank" aria-label="TikTok">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M16.5 1.5c.9 1.7 2.4 2.9 4.2 3.3v3.4c-1.7 0-3.3-.5-4.7-1.4v7.2a6.3 6.3 0 1 1-6.3-6.3c.4 0 .8 0 1.2.1v3.6a2.6 2.6 0 1 0 2.6 2.6V1.5h3z"/>
+    </svg>
+  </a>
+        <a href="https://www.instagram.com/institut.al.islah/" target="_blank" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z"/>
+    </svg>
+  </a>
+        <a href="mailto:alislah.inscription@outlook.com" aria-label="Contact">📧</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Institut Al-Islah – Tous droits réservés
+  </div>
+</footer>
+
+<script src="courses.js?v=40" defer></script>
+<script src="app.js?v=41" defer></script>
+</body>
+</html>
