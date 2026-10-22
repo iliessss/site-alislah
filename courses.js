@@ -10,18 +10,27 @@ window.courses = [
     slug: "alphabetisation-homme",
     password: "ALPHAH25",
     titre: "Séminaire d'alphabétisation arabe",
-    enseignant: "Muʿallim Ilies",
+    enseignant: "Oustedh Joachim",
     description: "Corrections et explications du livre d’alphabétisation Al-Iqraiyyah.",
     tags: ["Arabe", "Débutant"],
     zoomUrl: ZOOM_LINK,
     //pdfView: "assets/Livre-dalphabetisation-iqraiyyah-2025.pdf",
     replays: [
-    { titre: "Cours du 19/02", url: "https://drive.google.com/file/d/1yz_iBMlRzkwoyRB141lUcUu2PfQpFH6L/preview" },
-    { titre: "Cours du 22/02", url: "https://drive.google.com/file/d/1p4jnGSq0-no5INqpfS9wekSRyGH9rTUV/preview" },
-    { titre: "Cours du 26/02", url: "https://drive.google.com/file/d/1rEqmZamLk8IDoIAz8ogKix8S6wvsao43/preview" },
-    { titre: "Cours du 01/03", url: "https://drive.google.com/file/d/1wEN19ypaIC3giEDOzAQggUX3EVnkppSf/preview" },
-    { titre: "Cours du 05/03", url: "https://drive.google.com/file/d/1OUVj7_bDaWRd07KHSytfvUArEBM0R5_t/preview" }
+    { titre: "Cours du 02/06", url: "https://youtu.be/ZmfQotKXC0M" },
+    { titre: "Cours du 09/06", url: "https://youtu.be/249FpOX4vX8" },
+    { titre: "Cours du 11/06", url: "https://youtu.be/ficu8R_FsNE" },
+    { titre: "Cours du 14/06", url: "https://youtu.be/VBhdd95NQUE" },
+    { titre: "Cours du 16/06", url: "https://youtu.be/p8JnNiDRBo8" },
+    { titre: "Cours du 21/06", url: "https://youtu.be/NwIf5zoatoc" },
+    { titre: "Cours du 23/06", url: "https://youtu.be/caj2tlCJKyA" },
+    { titre: "Cours du 28/06", url: "https://youtu.be/8IKuZx3yF74" },
+    { titre: "Cours du 05/07", url: "https://youtu.be/BPrebgk6Bmw" },
+    { titre: "Cours du 07/07", url: "https://youtu.be/U2U0lvg38t0" },
+    { titre: "Cours du 12/07", url: "https://youtu.be/M6tSuywX4SM" }
+
+
   ],
+
 
     supports: [
       { titre: "Fiche n°1 — bâ, tâ, thâ et voyelles courtes",
@@ -100,7 +109,19 @@ window.courses = [
     zoomUrl: ZOOM_LINK,
     //pdfView: "assets/Livre-dalphabetisation-iqraiyyah-2025.pdf",
     replays: [
-    { titre: "Cours du 28/04", url: "https://ton-lien-ici" },
+    { titre: "Cours du 27/06", url: "https://youtu.be/uDzWn-50SOM" },
+    { titre: "Cours du 01/07", url: "https://youtu.be/F3pa9__W8UU" },
+    { titre: "Cours du 06/07", url: "https://youtu.be/58M4D3vn50E" },
+    { titre: "Cours du 12/07", url: "https://youtu.be/2czABPSQMw0" },
+    { titre: "Cours du 18/07", url: "https://youtu.be/vutk_bZQDXg" },
+    { titre: "Cours du 23/07", url: "https://youtu.be/8O1R4M4OF6w" },
+    { titre: "Cours du 27/07", url: "https://youtu.be/aVHM8_4gTOY" }
+
+
+
+    
+    
+    
   ],
 
     supports: [
@@ -169,15 +190,31 @@ window.courses = [
 
   {
     slug: "tajwid",
-    password: "TAJWID25",
+    password: "tajwid2026",
     titre: "Séminaire de tajwid",
-    enseignant: "Oustedh Joachim",
+    enseignant: "Oustedh Ilyes",
     description: "Cursus Tamhidi: Corrections et explications du livre Tajwīd Tadrīb al-Qāri, éditions Al-Iqraiyyah.",
     tags: ["Tajwid","Débutant"],
     //pdfView: "assets/Tajwid-indesign-2025-corrige.pdf",
     replays: [
-    { titre: "Cours du 20/04", url: "https://youtu.be/DHISpnbHgZA" },
-    { titre: "Cours du 25/04", url: "https://youtu.be/TTGXMrgaUbA" }
+    { titre: "Cours du 22/06", url: "https://youtu.be/g4e-Jk7Ayng"},
+    { titre: "Cours du 28/06", url: "https://youtu.be/kFnmYCvpKJU"},
+    { titre: "Cours du 29/06", url: "https://youtu.be/W5zEB1511k4"},
+    { titre: "Cours du 03/07", url: "https://youtu.be/X54qykPQPlg"},
+    { titre: "Cours du 06/07", url: "https://youtu.be/4Tc6UhC3A4k"},
+    { titre: "Cours du 10/07", url: "https://youtu.be/DoKeFrNapjU"},
+    { titre: "Cours du 13/07", url: "https://youtu.be/GCw6ygD4gDc"},
+    { titre: "Cours du 17/07", url: "https://youtu.be/KJO6lS2SuK0"},
+    { titre: "Cours du 20/07", url: "https://youtu.be/EcXz-0dGhqI"},
+    { titre: "Cours du 27/07", url: "https://youtu.be/SY8UykuA80g"},
+    { titre: "Cours du 31/07", url: "https://youtu.be/QZgnCdaoVvA"}
+
+
+
+    
+
+    
+
   ],
 
     supports: [
